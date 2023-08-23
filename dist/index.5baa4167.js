@@ -2947,6 +2947,544 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+const resList = [
+    {
+        "info": {
+            "id": "245348",
+            "name": "Oye Kiddan",
+            "cloudinaryImageId": "poymismten2l3pbit1ui",
+            "locality": "Jambulkar Nagar",
+            "areaName": "Hinjawadi",
+            "costForTwo": "₹250 for two",
+            "cuisines": [
+                "North Indian",
+                "Punjabi",
+                "Thalis"
+            ],
+            "avgRating": 4,
+            "feeDetails": {
+                "restaurantId": "245348",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3200
+            },
+            "parentId": "690",
+            "avgRatingString": "4.0",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 15,
+                "lastMileTravel": 0.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15 mins",
+                "lastMileTravelString": "0.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-23 16:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹100 OFF",
+                "subHeader": "ABOVE ₹249",
+                "discountTag": "FLAT DEAL",
+                "discountCalloutInfo": {
+                    "message": "Free Delivery",
+                    "logoCtx": {
+                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+                    }
+                }
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/oye-kiddan-jambulkar-nagar-hinjawadi-pune-245348",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "23716",
+            "name": "McDonald's",
+            "cloudinaryImageId": "ee5f8e06b300efc07c9fe3f4df40dfc4",
+            "locality": "Marunji Road",
+            "areaName": "Hinjawadi",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Burgers",
+                "Beverages",
+                "Cafe",
+                "Desserts"
+            ],
+            "avgRating": 4.3,
+            "feeDetails": {
+                "restaurantId": "23716",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3200
+            },
+            "parentId": "630",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 14,
+                "lastMileTravel": 0.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "14 mins",
+                "lastMileTravelString": "0.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-24 02:45:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "10% OFF",
+                "subHeader": "ABOVE ₹999",
+                "discountTag": "FLAT DEAL",
+                "discountCalloutInfo": {
+                    "message": "Free Delivery",
+                    "logoCtx": {
+                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+                    }
+                }
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/mcdonalds-marunji-road-hinjawadi-pune-23716",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "24441",
+            "name": "Domino's Pizza",
+            "cloudinaryImageId": "pxddqgxq1wyecxk8orpe",
+            "locality": "Suratwala Mark Plazo",
+            "areaName": "Hinjawadi",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Pizzas",
+                "Italian",
+                "Pastas",
+                "Desserts"
+            ],
+            "avgRating": 3.8,
+            "feeDetails": {
+                "restaurantId": "24441",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3200
+            },
+            "parentId": "2456",
+            "avgRatingString": "3.8",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 25,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25 mins",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-23 23:55:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹999",
+                "discountTag": "FLAT DEAL"
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/dominos-pizza-suratwala-mark-plazo-hinjawadi-pune-24441",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "89140",
+            "name": "KFC",
+            "cloudinaryImageId": "56c9ab92bd79745fd152a30fa2525426",
+            "locality": "Wakad Road",
+            "areaName": "Hinjawadi",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Burgers",
+                "Biryani",
+                "American",
+                "Snacks",
+                "Fast Food"
+            ],
+            "avgRating": 4,
+            "feeDetails": {
+                "restaurantId": "89140",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3200
+            },
+            "parentId": "547",
+            "avgRatingString": "4.0",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 15,
+                "lastMileTravel": 1.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15 mins",
+                "lastMileTravelString": "1.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-23 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50",
+                "discountCalloutInfo": {
+                    "message": "Free Delivery",
+                    "logoCtx": {
+                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+                    }
+                }
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/kfc-wakad-road-hinjawadi-pune-89140",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "253596",
+            "name": "Burger King",
+            "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+            "locality": "Service Road",
+            "areaName": "Tathawade",
+            "costForTwo": "₹350 for two",
+            "cuisines": [
+                "Burgers",
+                "American"
+            ],
+            "avgRating": 4.1,
+            "feeDetails": {
+                "restaurantId": "253596",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4400
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4400
+            },
+            "parentId": "166",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 25,
+                "lastMileTravel": 4.2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25 mins",
+                "lastMileTravelString": "4.2 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-24 03:40:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹120",
+                "discountCalloutInfo": {
+                    "message": "Free Delivery",
+                    "logoCtx": {
+                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+                    }
+                }
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/burger-king-service-road-tathawade-pune-253596",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "145719",
+            "name": "Bebe Di Rasoi - Punjabi",
+            "cloudinaryImageId": "ilovbsdcukuuath8ltza",
+            "locality": "Wakad",
+            "areaName": "Hinjawadi",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "North Indian",
+                "Punjabi",
+                "Biryani",
+                "Kebabs",
+                "Mughlai",
+                "Desserts",
+                "Beverages"
+            ],
+            "avgRating": 4,
+            "feeDetails": {
+                "restaurantId": "145719",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3200
+            },
+            "parentId": "230548",
+            "avgRatingString": "4.0",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 19,
+                "lastMileTravel": 2.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "19 mins",
+                "lastMileTravelString": "2.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-08-23 16:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹120",
+                "discountCalloutInfo": {
+                    "message": "Free Delivery",
+                    "logoCtx": {
+                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+                    }
+                }
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/bebe-di-rasoi-punjabi-wakad-hinjawadi-pune-145719",
+            "type": "WEBLINK"
+        }
+    }
+];
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
@@ -2960,12 +3498,12 @@ const Header = ()=>{
                         children: "Logo"
                     }, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 9,
+                        lineNumber: 706,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 8,
+                    lineNumber: 705,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -2977,7 +3515,7 @@ const Header = ()=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "app.js",
-                                lineNumber: 13,
+                                lineNumber: 710,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -2985,7 +3523,7 @@ const Header = ()=>{
                                 children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "app.js",
-                                lineNumber: 14,
+                                lineNumber: 711,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -2993,87 +3531,89 @@ const Header = ()=>{
                                 children: "Cart"
                             }, void 0, false, {
                                 fileName: "app.js",
-                                lineNumber: 15,
+                                lineNumber: 712,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "app.js",
-                        lineNumber: 12,
+                        lineNumber: 709,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 11,
+                    lineNumber: 708,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "app.js",
-            lineNumber: 7,
+            lineNumber: 704,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 6,
+        lineNumber: 703,
         columnNumber: 9
     }, undefined);
 };
 _c = Header;
-const RestaurantCard = ()=>{
+const RestaurantCard = (props)=>{
+    const { resData } = props;
+    const { cloudinaryImageId, name, cuisines, costForTwo, locality } = resData?.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/l7va77zuwafqa20wn37h",
-                class: "img-responsive",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId,
+                className: " res-img img-responsive",
                 alt: ""
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 26,
+                lineNumber: 725,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-des",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "Meghna Foods"
+                        children: name
                     }, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 28,
+                        lineNumber: 727,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: "Biryani, North India, Asian"
+                        children: cuisines.join(", ")
                     }, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 29,
+                        lineNumber: 728,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: "4.4 Stars"
+                        children: costForTwo
                     }, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 30,
+                        lineNumber: 729,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: "38 minutes"
+                        children: locality
                     }, void 0, false, {
                         fileName: "app.js",
-                        lineNumber: 31,
+                        lineNumber: 730,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "app.js",
-                lineNumber: 27,
+                lineNumber: 726,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 25,
+        lineNumber: 724,
         columnNumber: 9
     }, undefined);
 };
@@ -3083,46 +3623,21 @@ const Body = ()=>{
         className: "res-body",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "restro-container",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
+            children: resList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                    resData: restaurant
+                }, restaurant.info.id, false, {
                     fileName: "app.js",
-                    lineNumber: 42,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                    fileName: "app.js",
-                    lineNumber: 43,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                    fileName: "app.js",
-                    lineNumber: 44,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                    fileName: "app.js",
-                    lineNumber: 45,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                    fileName: "app.js",
-                    lineNumber: 46,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {}, void 0, false, {
-                    fileName: "app.js",
-                    lineNumber: 47,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
+                    lineNumber: 743,
+                    columnNumber: 21
+                }, undefined))
+        }, void 0, false, {
             fileName: "app.js",
-            lineNumber: 41,
+            lineNumber: 740,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 40,
+        lineNumber: 739,
         columnNumber: 9
     }, undefined);
 };
@@ -3132,25 +3647,25 @@ const AppComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 55,
+                lineNumber: 754,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 56,
+                lineNumber: 755,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 54,
+        lineNumber: 753,
         columnNumber: 5
     }, undefined);
 _c3 = AppComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppComponent, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 63,
+    lineNumber: 762,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;

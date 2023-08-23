@@ -29,7 +29,13 @@
 
 .res-body .restro-container .res-card {
   border: 1px solid #000;
-  max-width: 200px;
+  width: 300px;
+}
+
+.res-body .restro-container .res-card .res-img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
 }
 
 .img-responsive {
