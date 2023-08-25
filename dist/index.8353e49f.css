@@ -38,6 +38,18 @@
   height: 200px;
 }
 
+.shimmer-container {
+  flex-wrap: wrap;
+  gap: 20px;
+  display: flex;
+}
+
+.shimmer-container .shimmer-cards {
+  background-color: #f0f0f0;
+  width: 200px;
+  height: 400px;
+}
+
 .img-responsive {
   max-width: 100%;
   height: auto;

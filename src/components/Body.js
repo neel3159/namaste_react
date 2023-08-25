@@ -1,8 +1,11 @@
-import {useState, useEffect} from "react"
-import RestaurantCard from "./RestaurantCard"
-import {resList} from "../utils/mockData"
+import {useState, useEffect} from "react";
+import RestaurantCard from "./RestaurantCard";
+import {resList} from "../utils/mockData";
+import Shimmer from "./Shimmer";
+
+
 const Body = () => {
-    const [listOfRestaurant, setListOfRestaurant] = useState(resList)
+    const [listOfRestaurant, setListOfRestaurant] = useState([])
     useEffect (() => {
         console.log("useEffect loaded")
         fetchData();
@@ -15,6 +18,9 @@ const Body = () => {
             const jsonData = await data.json();
             console.log(jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants)
             setListOfRestaurant(jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants)
+    }
+    if(listOfRestaurant.length == 0){
+        return <Shimmer />
     }
     return (
         <div className="res-body">
