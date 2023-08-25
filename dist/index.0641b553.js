@@ -27448,6 +27448,17 @@ var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
     const [listOfRestaurant, setListOfRestaurant] = (0, _react.useState)((0, _mockData.resList));
+    (0, _react.useEffect)(()=>{
+        console.log("useEffect loaded");
+        fetchData();
+    }, []);
+    console.log("body loaded");
+    const fetchData = async ()=>{
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5912716&lng=73.73890899999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const jsonData = await data.json();
+        console.log(jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+        setListOfRestaurant(jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-body",
         children: [
@@ -27460,7 +27471,7 @@ const Body = ()=>{
                 children: "Highest rating"
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 8,
+                lineNumber: 21,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27469,22 +27480,22 @@ const Body = ()=>{
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 17,
+                        lineNumber: 31,
                         columnNumber: 21
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 14,
+                lineNumber: 28,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 7,
+        lineNumber: 20,
         columnNumber: 9
     }, undefined);
 };
-_s(Body, "JSzjxisid/jHOcWBv0XFsmyf8NI=");
+_s(Body, "aPeam8sMaAkeWhtzTl5D0m4zAK0=");
 _c = Body;
 exports.default = Body;
 var _c;
