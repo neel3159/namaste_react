@@ -1,4 +1,8 @@
+import {useState} from "react"
 const Header = () =>{
+
+    const [btnNameReact, useBtnNameReact] = useState("login")
+
     return(
         <div className="header">
             <div className="flex">
@@ -10,6 +14,12 @@ const Header = () =>{
                         <li className="nav-link">Home</li>
                         <li className="nav-link">Contact Us</li>
                         <li className="nav-link">Cart</li>
+                        <li>
+                            <button className="login-btn" onClick = {() => {
+                                return btnNameReact == "login" ? useBtnNameReact("logout") : useBtnNameReact("login")
+                                    
+                            }} >{btnNameReact}</button>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -2985,7 +2985,7 @@ $RefreshReg$(_c, "AppComponent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header":"hsJbF","./components/Body":"8yaV8"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Body":"8yaV8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27170,7 +27170,128 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"hsJbF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bfed.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const Header = ()=>{
+    _s();
+    var _s1 = $RefreshSig$();
+    const [btnNameReact, useBtnNameReact] = (0, _react.useState)("login");
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "flex",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "logo",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "logo-p",
+                        children: "Logo"
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 10,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 9,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "links",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "nav-link",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 14,
+                                columnNumber: 25
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "nav-link",
+                                children: "Contact Us"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 15,
+                                columnNumber: 25
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "nav-link",
+                                children: "Cart"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 16,
+                                columnNumber: 25
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "login-btn",
+                                    onClick: _s1(()=>{
+                                        _s1();
+                                        return btnNameReact == "login" ? useBtnNameReact("logout") : useBtnNameReact("login");
+                                    }, "kIpOUV/LX0mAqmjFdSF6zPQG3o0=", false, function() {
+                                        return [
+                                            useBtnNameReact,
+                                            useBtnNameReact
+                                        ];
+                                    }),
+                                    children: btnNameReact
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 18,
+                                    columnNumber: 29
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 17,
+                                columnNumber: 25
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 13,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Header.js",
+            lineNumber: 8,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Header.js",
+        lineNumber: 7,
+        columnNumber: 9
+    }, undefined);
+};
+_s(Header, "ki0Qf5lMxOysAaTXidBvojDzKCY=");
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$bfed.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27338,99 +27459,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"hsJbF":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bfed.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Header = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "flex",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "logo",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "logo-p",
-                        children: "Logo"
-                    }, void 0, false, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 6,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/Header.js",
-                    lineNumber: 5,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "links",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: "nav-link",
-                                children: "Home"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 10,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: "nav-link",
-                                children: "Contact Us"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 11,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: "nav-link",
-                                children: "Cart"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 12,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 9,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/Header.js",
-                    lineNumber: 8,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Header.js",
-            lineNumber: 4,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Header.js",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Header;
-exports.default = Header;
-var _c;
-$RefreshReg$(_c, "Header");
-
-  $parcel$ReactRefreshHelpers$bfed.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27443,13 +27472,15 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-var _mockData = require("../utils/mockData");
+// import {resList} from "../utils/mockData";
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
+    const [originalListOfRestaurant, setOriginalListOfRestaurant] = (0, _react.useState)([]);
     const [listOfRestaurant, setListOfRestaurant] = (0, _react.useState)([]);
+    const [searchText, setSearchText] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         console.log("useEffect loaded");
         fetchData();
@@ -27458,17 +27489,44 @@ const Body = ()=>{
     const fetchData = async ()=>{
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5912716&lng=73.73890899999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const jsonData = await data.json();
-        console.log(jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
-        setListOfRestaurant(jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+        console.log();
+        const restaurants = jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
+        setOriginalListOfRestaurant(restaurants);
+        setListOfRestaurant(restaurants);
     };
-    if (listOfRestaurant.length == 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    // Conditional Rendering
+    // if(listOfRestaurant.length == 0){
+    //     return <Shimmer />
+    // }
+    return listOfRestaurant.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 23,
-        columnNumber: 16
-    }, undefined);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        lineNumber: 31,
+        columnNumber: 43
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-body",
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                value: searchText,
+                onChange: (e)=>{
+                    setSearchText(e.target.value);
+                }
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 33,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>{
+                    const searchedValue = originalListOfRestaurant.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                    setListOfRestaurant(searchedValue);
+                },
+                children: "Submit"
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 36,
+                columnNumber: 13
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 className: "highest-rating",
                 onClick: ()=>{
@@ -27478,7 +27536,7 @@ const Body = ()=>{
                 children: "Highest rating"
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 27,
+                lineNumber: 44,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27487,22 +27545,22 @@ const Body = ()=>{
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 37,
+                        lineNumber: 54,
                         columnNumber: 21
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 34,
+                lineNumber: 51,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 26,
+        lineNumber: 32,
         columnNumber: 9
     }, undefined);
 };
-_s(Body, "BdiMu3YBtgVHfcLpMKqlgbA9KCQ=");
+_s(Body, "HlC/Rp5vxswSQvjqfUzCQy97qDA=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -27513,7 +27571,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/mockData":"iOpE9","react":"21dqq","./Shimmer":"g6ZGj"}],"bMboU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"bMboU","./Shimmer":"g6ZGj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bMboU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27603,555 +27661,11 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constants":"hB8jg"}],"hB8jg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hB8jg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
 const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iOpE9":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "resList", ()=>resList);
-const resList = [
-    {
-        "info": {
-            "id": "245348",
-            "name": "Oye Kiddan",
-            "cloudinaryImageId": "poymismten2l3pbit1ui",
-            "locality": "Jambulkar Nagar",
-            "areaName": "Hinjawadi",
-            "costForTwo": "₹250 for two",
-            "cuisines": [
-                "North Indian",
-                "Punjabi",
-                "Thalis"
-            ],
-            "avgRating": 4,
-            "feeDetails": {
-                "restaurantId": "245348",
-                "fees": [
-                    {
-                        "name": "BASE_DISTANCE",
-                        "fee": 3200
-                    },
-                    {
-                        "name": "BASE_TIME"
-                    },
-                    {
-                        "name": "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                "totalFee": 3200
-            },
-            "parentId": "690",
-            "avgRatingString": "4.0",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 15,
-                "lastMileTravel": 0.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15 mins",
-                "lastMileTravelString": "0.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2023-08-23 16:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "₹100 OFF",
-                "subHeader": "ABOVE ₹249",
-                "discountTag": "FLAT DEAL",
-                "discountCalloutInfo": {
-                    "message": "Free Delivery",
-                    "logoCtx": {
-                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
-                    }
-                }
-            },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/oye-kiddan-jambulkar-nagar-hinjawadi-pune-245348",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "23716",
-            "name": "McDonald's",
-            "cloudinaryImageId": "ee5f8e06b300efc07c9fe3f4df40dfc4",
-            "locality": "Marunji Road",
-            "areaName": "Hinjawadi",
-            "costForTwo": "₹400 for two",
-            "cuisines": [
-                "Burgers",
-                "Beverages",
-                "Cafe",
-                "Desserts"
-            ],
-            "avgRating": 4.3,
-            "feeDetails": {
-                "restaurantId": "23716",
-                "fees": [
-                    {
-                        "name": "BASE_DISTANCE",
-                        "fee": 3200
-                    },
-                    {
-                        "name": "BASE_TIME"
-                    },
-                    {
-                        "name": "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                "totalFee": 3200
-            },
-            "parentId": "630",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 14,
-                "lastMileTravel": 0.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "14 mins",
-                "lastMileTravelString": "0.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2023-08-24 02:45:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "10% OFF",
-                "subHeader": "ABOVE ₹999",
-                "discountTag": "FLAT DEAL",
-                "discountCalloutInfo": {
-                    "message": "Free Delivery",
-                    "logoCtx": {
-                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
-                    }
-                }
-            },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/mcdonalds-marunji-road-hinjawadi-pune-23716",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "24441",
-            "name": "Domino's Pizza",
-            "cloudinaryImageId": "pxddqgxq1wyecxk8orpe",
-            "locality": "Suratwala Mark Plazo",
-            "areaName": "Hinjawadi",
-            "costForTwo": "₹400 for two",
-            "cuisines": [
-                "Pizzas",
-                "Italian",
-                "Pastas",
-                "Desserts"
-            ],
-            "avgRating": 3.8,
-            "feeDetails": {
-                "restaurantId": "24441",
-                "fees": [
-                    {
-                        "name": "BASE_DISTANCE",
-                        "fee": 3200
-                    },
-                    {
-                        "name": "BASE_TIME"
-                    },
-                    {
-                        "name": "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                "totalFee": 3200
-            },
-            "parentId": "2456",
-            "avgRatingString": "3.8",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 25,
-                "serviceability": "SERVICEABLE",
-                "slaString": "25 mins",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2023-08-23 23:55:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "₹125 OFF",
-                "subHeader": "ABOVE ₹999",
-                "discountTag": "FLAT DEAL"
-            },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/dominos-pizza-suratwala-mark-plazo-hinjawadi-pune-24441",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "89140",
-            "name": "KFC",
-            "cloudinaryImageId": "56c9ab92bd79745fd152a30fa2525426",
-            "locality": "Wakad Road",
-            "areaName": "Hinjawadi",
-            "costForTwo": "₹400 for two",
-            "cuisines": [
-                "Burgers",
-                "Biryani",
-                "American",
-                "Snacks",
-                "Fast Food"
-            ],
-            "avgRating": 4,
-            "feeDetails": {
-                "restaurantId": "89140",
-                "fees": [
-                    {
-                        "name": "BASE_DISTANCE",
-                        "fee": 3200
-                    },
-                    {
-                        "name": "BASE_TIME"
-                    },
-                    {
-                        "name": "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                "totalFee": 3200
-            },
-            "parentId": "547",
-            "avgRatingString": "4.0",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 15,
-                "lastMileTravel": 1.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15 mins",
-                "lastMileTravelString": "1.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2023-08-23 23:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "20% OFF",
-                "subHeader": "UPTO ₹50",
-                "discountCalloutInfo": {
-                    "message": "Free Delivery",
-                    "logoCtx": {
-                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
-                    }
-                }
-            },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/kfc-wakad-road-hinjawadi-pune-89140",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "253596",
-            "name": "Burger King",
-            "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
-            "locality": "Service Road",
-            "areaName": "Tathawade",
-            "costForTwo": "₹350 for two",
-            "cuisines": [
-                "Burgers",
-                "American"
-            ],
-            "avgRating": 4.1,
-            "feeDetails": {
-                "restaurantId": "253596",
-                "fees": [
-                    {
-                        "name": "BASE_DISTANCE",
-                        "fee": 4400
-                    },
-                    {
-                        "name": "BASE_TIME"
-                    },
-                    {
-                        "name": "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                "totalFee": 4400
-            },
-            "parentId": "166",
-            "avgRatingString": "4.1",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 25,
-                "lastMileTravel": 4.2,
-                "serviceability": "SERVICEABLE",
-                "slaString": "25 mins",
-                "lastMileTravelString": "4.2 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2023-08-24 03:40:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "60% OFF",
-                "subHeader": "UPTO ₹120",
-                "discountCalloutInfo": {
-                    "message": "Free Delivery",
-                    "logoCtx": {
-                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
-                    }
-                }
-            },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/burger-king-service-road-tathawade-pune-253596",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "145719",
-            "name": "Bebe Di Rasoi - Punjabi",
-            "cloudinaryImageId": "ilovbsdcukuuath8ltza",
-            "locality": "Wakad",
-            "areaName": "Hinjawadi",
-            "costForTwo": "₹300 for two",
-            "cuisines": [
-                "North Indian",
-                "Punjabi",
-                "Biryani",
-                "Kebabs",
-                "Mughlai",
-                "Desserts",
-                "Beverages"
-            ],
-            "avgRating": 4,
-            "feeDetails": {
-                "restaurantId": "145719",
-                "fees": [
-                    {
-                        "name": "BASE_DISTANCE",
-                        "fee": 3200
-                    },
-                    {
-                        "name": "BASE_TIME"
-                    },
-                    {
-                        "name": "ANCILLARY_SURGE_FEE"
-                    }
-                ],
-                "totalFee": 3200
-            },
-            "parentId": "230548",
-            "avgRatingString": "4.0",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 19,
-                "lastMileTravel": 2.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "19 mins",
-                "lastMileTravelString": "2.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2023-08-23 16:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "60% OFF",
-                "subHeader": "UPTO ₹120",
-                "discountCalloutInfo": {
-                    "message": "Free Delivery",
-                    "logoCtx": {
-                        "logo": "v1655895371/free_delivery_logo_hqipbo.png"
-                    }
-                }
-            },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/bebe-di-rasoi-punjabi-wakad-hinjawadi-pune-145719",
-            "type": "WEBLINK"
-        }
-    }
-];
-exports.default = resList;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
