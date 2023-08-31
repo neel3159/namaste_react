@@ -27489,10 +27489,10 @@ const Body = ()=>{
     const fetchData = async ()=>{
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5912716&lng=73.73890899999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const jsonData = await data.json();
-        console.log();
         const restaurants = jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
         setOriginalListOfRestaurant(restaurants);
         setListOfRestaurant(restaurants);
+        console.log(restaurants[0].info);
     };
     // Conditional Rendering
     // if(listOfRestaurant.length == 0){
@@ -27539,18 +27539,29 @@ const Body = ()=>{
                 lineNumber: 44,
                 columnNumber: 13
             }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>{
+                    const pureVegRestaurant = originalListOfRestaurant.filter((res)=>res.info.veg);
+                    setListOfRestaurant(pureVegRestaurant);
+                },
+                children: "Pure Veg"
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 51,
+                columnNumber: 13
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "restro-container",
                 children: listOfRestaurant.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 54,
+                        lineNumber: 61,
                         columnNumber: 21
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 51,
+                lineNumber: 57,
                 columnNumber: 13
             }, undefined)
         ]

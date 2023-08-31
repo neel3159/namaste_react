@@ -18,10 +18,10 @@ const Body = () => {
             "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5912716&lng=73.73890899999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
             );
             const jsonData = await data.json();
-            console.log()
             const restaurants = jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
             setOriginalListOfRestaurant(restaurants)
             setListOfRestaurant(restaurants)
+            console.log(restaurants[0].info)
     }
 
     // Conditional Rendering
@@ -48,11 +48,17 @@ const Body = () => {
                 setListOfRestaurant(filteredArray)
                 }} 
             >Highest rating</button>
+            <button onClick={()=>{
+                const pureVegRestaurant = originalListOfRestaurant.filter(
+                    (res) => (res.info.veg)
+                )
+                setListOfRestaurant(pureVegRestaurant)
+            }}>Pure Veg</button>
             <div className="restro-container">
                 {
+
                     listOfRestaurant.map((restaurant)=>(
                     <RestaurantCard key={restaurant.info.id}  resData={restaurant}/>
-                    
                     ))
                 }
             </div>
