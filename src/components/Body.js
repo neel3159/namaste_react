@@ -22,7 +22,6 @@ const Body = () => {
             const restaurants = jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
             setOriginalListOfRestaurant(restaurants)
             setListOfRestaurant(restaurants)
-            console
     }
 
     // Conditional Rendering

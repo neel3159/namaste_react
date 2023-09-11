@@ -4,7 +4,8 @@ import ReactDom from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import Aboutus from "./components/Aboutus";
-import {createBrowserRouter, RouterProvider, Outlet, Link} from "react-router-dom"
+import RestaurantPage from "./components/RestaurantPage";
+import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom"
 
 
 
@@ -28,6 +29,9 @@ const routes = createBrowserRouter([
             {
                 path: "/aboutus",
                 element: <Aboutus/>
+            },{
+                path: "/restaurants/:resId",
+                element: <RestaurantPage/>
             }
             
         ]
