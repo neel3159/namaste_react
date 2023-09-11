@@ -1,4 +1,5 @@
 import {useState} from "react"
+import { Link } from "react-router-dom"
 const Header = () =>{
 
     const [btnNameReact, useBtnNameReact] = useState("login")
@@ -11,8 +12,8 @@ const Header = () =>{
                 </div>
                 <div className="links">
                     <ul>
-                        <li className="nav-link">Home</li>
-                        <li className="nav-link">Contact Us</li>
+                        <li className="nav-link"><Link to="/">Home</Link></li>
+                        <li className="nav-link"><Link to="/aboutus">Contact Us</Link></li>
                         <li className="nav-link">Cart</li>
                         <li>
                             <button className="login-btn" onClick = {() => {

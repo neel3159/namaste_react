@@ -3,17 +3,37 @@ import ReactDom from "react-dom/client";
 
 import Header from "./components/Header";
 import Body from "./components/Body";
+import Aboutus from "./components/Aboutus";
+import {createBrowserRouter, RouterProvider, Outlet, Link} from "react-router-dom"
 
 
 
 const AppComponent = () => (
     <div className="app-component">
+        
         <Header />
-        <Body />
+        <Outlet/>
     </div>
-    )
+)
 
+const routes = createBrowserRouter([
+    {
+        path: "/",
+        element: <AppComponent/>,
+        children: [
+            {
+                path: "/",
+                element: <Body />
+            },
+            {
+                path: "/aboutus",
+                element: <Aboutus/>
+            }
+            
+        ]
+    }
+])
 
 const root =  ReactDom.createRoot(document.getElementById("root"))
 
-root.render(<AppComponent/>)
+root.render(<RouterProvider router={routes}/>)
